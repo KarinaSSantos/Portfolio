@@ -1,3 +1,4 @@
+<?php
 //varios códigos úteis para modificar coisas no woocommerce
 
 //add preço de valor unitário nos produtos  Importante: necessário criar o campo personalizado
@@ -22,3 +23,4 @@ function fa_custom_range_price( $price, $from, $to )
 }
 add_filter('woocommerce_format_price_range', 'fa_custom_range_price', 10, 3);
 
+?>
