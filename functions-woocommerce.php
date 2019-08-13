@@ -7,13 +7,19 @@ function cw_change_product_price_display( $price ) {
 	 $unit_price = get_field('valor_unitario');
 	 if (function_exists('get_field')){
 		if (!empty (get_field('valor_unitario'))){
-        $price .= " <p>Valor Unitário:</span <span class='unit-price'>". get_field('valor_unitario'). "</p>";
+        $price .= " <p>Valor Unitário: </span <span class='unit-price'>". get_field('valor_unitario'). "</p>";
         return $price;
       }
+		 else {
+			 $price;
+			 return $price;
+		 }
+		 
 	 }
  }
       add_filter( 'woocommerce_get_price_html', 'cw_change_product_price_display' );
       add_filter( 'woocommerce_cart_item_price', 'cw_change_product_price_display' );
+
       
 //add linha "a partir de:" no preço variavel dos produtos
 
