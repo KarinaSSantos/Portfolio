@@ -4,6 +4,16 @@
 
 ##Incluindo códigos para custom fields, actions, hooks, filters woocommerce!
 
+**Onde me achar:**
+
+**codePen**
+
+https://codepen.io/karina-santos
+
+**linkedin**
+
+https://www.linkedin.com/in/karina-gon%C3%A7alves-dos-santos-705b2555/
+
 #**Aqui você encontra links de projetos em que trabalhei com desenvolvimento Wordpress:**
 
 **Instituições**
