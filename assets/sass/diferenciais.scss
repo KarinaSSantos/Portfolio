@@ -1,0 +1,98 @@
+.Diferenciais{
+    height: 110vh;
+    background: #fff;
+    margin-top: 100px;
+    .DiferenciaisContainer{
+        padding-top: 80px;
+        display: flex;
+        align-items: flex-end;
+        .DiferenciaisTitle{
+            text-transform: uppercase;
+            font-weight: bolder;
+            color: #fff;
+            background: $degradeVerde;
+            padding: 12px 20px;
+            clip-path: polygon(0px 0px, 323px 1px, 371px 101.34%, 0px 100%);
+            width: 332px;
+            z-index: 3;
+            text-align: center;
+        }
+        .DiferenciaisSubTitle{
+            background: $degradeAzul;
+            color: #fff;
+            padding: 10px 0;
+            width: 332px;
+            height: 50px;
+            width: calc(100% - 332px);
+            position: absolute;
+            text-align: right;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-left: 332px;
+            
+            h2{
+                margin: 0;
+                padding: 0;
+                font-weight: normal;
+            }
+        }
+    }
+    .DiferenciaisContent{
+        margin-top: 104px;
+        display: flex;
+        justify-content: space-between;
+        .DiferenciaisContent_Info{
+            clip-path: polygon(0px -4px, 730px -3px, 730px 100.77%, 166px 100.00%);
+            height: 320px;
+            padding: 24px;
+            display: flex;
+            justify-content: center;
+            background-image: $degradeMarinhoL;
+            // #21496c
+            // #133654;
+            z-index: 8;
+            width: 686px;
+            position: absolute;
+            right: 0;
+            margin-top: 60px;
+            ul{
+                padding: 0;
+                margin: 0;
+                list-style-type: none;
+                line-height: 1.9em;
+                align-self: center;
+                :nth-child(1n){
+                    padding-left: 55px;
+                    width: 47%;
+                }
+                :nth-child(2n){
+                    padding-left: 110px;
+                    width: 60%;
+                }
+                :nth-child(3n){
+                    width: 68%;
+                    padding-left: 146px;
+                }
+                li{
+                    display: flex;
+                    flex-direction: row;
+                    padding-bottom: 20px;
+                    text-transform: uppercase;
+                    font-size: 18px;
+                    color: #fff;
+                    .Obs{
+                        font-size: 10px;
+                        text-transform: capitalize;
+                        display: block;
+                    }
+                    span{
+                        width: 30px !important;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
+

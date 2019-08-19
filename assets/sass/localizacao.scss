@@ -1,0 +1,73 @@
+.Localizacao{
+    background: #fff;
+    .LocalizacaoContainer{
+        padding-top: 80px;
+        display: flex;
+        align-items: flex-end;
+        
+        .LocalizacaoTitle{
+            text-transform: uppercase;
+            font-weight: bolder;
+            color: #fff;
+            background: $degradeVerde;
+            padding: 12px 20px;
+            clip-path: polygon(0px 0px, 323px 1px, 371px 101.34%, 0px 100%);
+            width: 332px;
+            z-index: 3;
+            text-align: center;
+        }
+        .LocalizacaoSubTitle{
+            background: $degradeAzul;
+            color: #fff;
+            padding: 10px 0;
+            width: 332px;
+            height: 50px;
+            width: calc(100% - 332px);
+            position: absolute;
+            text-align: right;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-left: 332px;
+            
+            h2{
+                margin: 0;
+                padding: 0;
+                font-weight: normal;
+            }
+        }
+    }
+    .LocalizacaoAll{
+        padding: 60px;
+        .Mapa{
+            display: flex;
+            justify-content: center;
+            img{
+                width: 100%;
+            }
+        }
+        .MapaInfo{
+            display: flex;
+        }
+        .Patrocinadores{
+            display: flex;
+            .BtnSubmit{
+                background: linear-gradient(to bottom,#fccc50,#fff);
+                padding: 20px 60px; 
+                clip-path: polygon(-3px -3px, 300px -3px, 333px 131.63%, 30px 131.26%);
+                border: none;
+                font-size: 16px;
+                font-weight: 400;
+                text-transform: uppercase;
+                margin: 100px 0;
+            }
+        }
+        .More{
+            p{
+                font-size: 10px;
+                text-align: justify;
+            }
+        }
+    }
+    
+}

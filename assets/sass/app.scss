@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+
+$degradeAzul: linear-gradient(to bottom, #124062, #0076b4);
+$degradeClarinho: linear-gradient(to bottom,#bccad3,#fff, #bccad3);
+$degradeClarinhoQts: linear-gradient(to top,#e8eeee,#fff);
+$degradeAzulEmp: linear-gradient(to left,#bccad3,#fff);
+$degradeMarinho: linear-gradient(to right,#00223b,#3a617d);
+$degradeMarinhoL: linear-gradient(to left,#00223b,#285074);
+$degradeVerde:   linear-gradient(to right, #00817d, #00817c);
+$degradeAmarelo: linear-gradient(to bottom, #fccc50, #fff);
+$AzulTexto: #00223b;
+
+$teste: #000;
+
+@import 'header.scss';
+@import 'empreendimento.scss';
+@import 'fotos.scss';
+@import 'diferenciais.scss';
+@import 'filmes.scss';
+@import 'localizacao.scss';
+@import 'rodape.scss';
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}

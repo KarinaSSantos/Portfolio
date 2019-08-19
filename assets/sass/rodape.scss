@@ -1,0 +1,20 @@
+.Rodape{
+    display: flex;
+    background: $degradeMarinho;
+    bottom: 0;
+    position: relative;
+    .ContainerFooter {
+        display: flex;
+        width: 100%;
+        .ContentFooter{
+            .RealizacaoFooter {
+                display: flex;
+                flex-direction: column;
+                background: linear-gradient(to bottom,#bccad3,#fff,#bccad3);
+                padding: 30px 50px;
+                clip-path: polygon(-3px -3px, 195px -2px, 335px 130.82%, 0px 129.65%);
+            }
+        }
+    
+    }
+}

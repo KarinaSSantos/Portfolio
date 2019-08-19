@@ -1,0 +1,149 @@
+.Empreendimento{
+    background: $degradeAzulEmp;
+    padding-bottom: 150px;
+    .EmpreendimentoContainer{
+        padding-top: 80px;
+        display: flex;
+        align-items: flex-end;
+        .EmpreendimentoTitle{
+            text-transform: uppercase;
+            font-weight: bolder;
+            color: #fff;
+            background: $degradeVerde;
+            padding: 12px 20px;
+            clip-path: polygon(0px 0px, 323px 1px, 371px 101.34%, 0px 100%);
+            width: 332px;
+            z-index: 3;
+        }
+        .EmpreendimentoSubTitle{
+            background: $degradeAzul;
+            color: #fff;
+            padding: 10px 0;
+            width: 332px;
+            height: 50px;
+            width: calc(100% - 332px);
+            position: absolute;
+            text-align: right;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-left: 332px;
+            
+            h2{
+                margin: 0;
+                padding: 0;
+                font-weight: normal;
+            }
+        }
+        
+    }
+    .ContainerAllEmpreendimento{
+        display: flex;
+        padding: 100px;
+        justify-content: space-around;
+        .ContainerFamilia {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+        }
+        .ContainerInfoQuartos {
+            width: 400px;
+            background: $degradeClarinhoQts;
+            padding: 20px;
+            margin: -8px;
+            text-transform: uppercase;
+            box-shadow: 0 4px 3px 0 #000000bf;
+            .SeparadorHorizontal{
+                height: 3px;
+                width: 100%;
+                background: #28547b;
+            }
+            .OthersQts{
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                font-size: 20px;
+                color: #072b45;
+                padding: 20px 0px;
+                line-height: 1.3em;
+            }
+            .ContentInfoQuartos {
+                display: flex;
+                background: linear-gradient(to bottom,#009e9a,#02736f);
+                color: #fff;
+                align-items: center;
+                .SeparadorVertical{
+                    background-color: #fff;
+                    height: 70px;
+                    width: 2px;
+                    z-index: 3;
+                }
+                
+            }
+            .ContainerQuartos{
+                display: flex;
+                padding: 5px 16px;
+                align-items: center;
+                
+            .NumerosLong {
+                font-size: 65px;
+                font-weight: 900;
+                padding-right: 10px;
+            }
+            .TitleApts{
+                font-size: 18px;
+            }
+            .TitleGardens{
+                font-size: 16px;
+            }
+           .TitleQts{
+               font-size: 22px;
+               font-weight: 900;
+               display: flex;
+               flex-direction: column;
+           }
+           
+        }
+        }
+
+        .ContainerForm {
+            width: 400px;
+            text-transform: uppercase;
+        
+        .TitleForm {
+            font-size: 33px;
+            margin-bottom: 20px;
+            color: #28547b;
+            .Comemore{
+                font-weight: 900;
+            }
+        }
+    .ContactForm{
+        display: flex;
+        flex-direction: column;
+        .BtnSubmit{
+            background: $degradeAmarelo;
+            padding: 20px;
+            clip-path: polygon(-3px -3px, 374px 1px, 401px 104.51%, 34px 110.92%);
+            border: none;
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+        input{
+            margin-bottom: 40px; 
+            padding: 8px;
+            border: 1px solid $AzulTexto;
+            background: #f4f4f4;
+            color: #b0b4b7;
+        }
+        textarea{
+            margin-bottom: 40px; 
+            padding: 8px;
+            border: 1px solid $AzulTexto;
+            background: #f4f4f4;
+            color: #b0b4b7;
+        }
+    }
+}
+}
+}
