@@ -7,10 +7,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta name='description' content='Empreendimentos Residenciais Nova Itaguaí' />
     <meta name='keywords' content='Empreendimentos, casas, moradias, Residenciais, residencial, itaguaí, casa' />
+
     <link href="dist/css/style.css" rel="stylesheet" type="text/css" />
-    <script src="dist/js/jquery-1.7.2.min.js"></script>
-    <script src="dist/js/lightbox.js"></script>
-    <link href="dist/css/gallery/lightbox.css" rel="stylesheet" />
+   
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-lightbox/0.2.12/slick-lightbox.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-lightbox/0.2.12/slick-lightbox.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-lightbox/0.2.12/slick-lightbox.min.js"></script>
+
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  
+    <!-- <script type="text/javascript" src="dist/js/main.js"></script> -->
 </head>
 
 <body>
@@ -180,11 +193,11 @@
                         <span>Este é o seu novo endereço.</span>
                     </div>
                     <div class="FormContato">
-                        <form class="ContactForm" title="contato" method="POST" action="/submit.php">
-                            <input type="text" name="nome" id="nome" placeholder="NOME" />
-                            <input type="email" name="mail" id="mail" placeholder="EMAIL" />
-                            <input type="tel" name="phone" id="phone" placeholder="TELEFONE" />
-                            <textarea name="message" id="message" rows="4" placeholder="MENSAGEM"></textarea>
+                        <form class="ContactForm" title="contato" method="POST" action="submit.php">
+                            <input type="text" name="nome" id="nome" placeholder="NOME" required />
+                            <input type="email" name="mail" id="mail" placeholder="EMAIL" required />
+                            <input type="tel" name="phone" id="phone" placeholder="TELEFONE" required />
+                            <textarea name="message" id="message" rows="4" placeholder="MENSAGEM" required></textarea>
                             <button type="submit" class="BtnSubmit">Quero mais informações</button>
                         </form>
                     </div>
@@ -203,218 +216,219 @@
             <div class="FotosContent">
                 <div class="FotosContent_Galeria">
                     <div class="FotosContainerGallery" id="gallery">
-                        <ul>
-                            <li>
+                         <ul class="portfolio-slides">
+                            <li class="single">
                                 <a href="assets/img/5A_QUADRA.jpg" rel="lightbox" title="Quadra Poliesportiva"><img
-                                        src="assets/img/5A_QUADRA.jpg" width="165" height="120"
+                                        src="assets/img/5A_QUADRA.jpg" 
                                         alt="Quadra Poliesportiva" title="Quadra Poliesportiva" /></a>
 
-                            <li>
+                            <li class="single">
                                 <a href="assets/img/05B-CAMPO.jpg" rel="lightbox" title="Campo de futebol"><img
                                         src="assets/img/05B-CAMPO.jpg" width="165" height="120" alt="Campo de futebol"
                                         title="Campo de futebol" /></a>
                             </li>
-                            </li>
-                            <li>
+                            <li class="single">
                                 <a href="assets/img/07-PLAY.jpg" rel="lightbox" title="Playground"><img
                                         src="assets/img/07-PLAY.jpg" width="165" height="120" alt="Playground"
                                         title="Playground" /></a>
                             </li>
-                            <li>
+                            <li class="single">
                                 <a href="assets/img/06-SALAO.jpg" rel="lightbox" title="Salão de Festas"><img
                                         src="assets/img/06-SALAO.jpg" width="165" height="120" alt="Salão de Festa"
                                         title="Salão de Festa" /></a>
                             </li>
-                            <li>
+                            <li class="single">
                                 <a href="assets/img/0_INTERIORES_FINAL-CMYK.jpg" rel="lightbox"
                                     title="Sala de Estar"><img src="assets/img/0_INTERIORES_FINAL-CMYK.jpg" width="165"
                                         height="120" alt="Sala de Estar" title="Sala de Estar" /></a>
                             </li>
-                            <li>
+                            <li class="single">
                                 <a href="assets/img/01_PORTARIA.jpg" rel="lightbox" title="Portaria 24h"><img
                                         src="assets/img/01_PORTARIA.jpg" width="165" height="120" alt="Portaria 24h"
                                         title="Portaria 24h" /></a>
                             </li>
-                            <li>
+                            <li class="single">
                                 <a href="assets/img/02A_CASA.jpg" rel="lightbox" title="Fachada"><img
                                         src="assets/img/02A_CASA.jpg" width="165" height="120" alt="Fachada"
                                         title="Fachada" /></a>
                             </li>
-                            <li>
+                            <li class="single">
                                 <a href="assets/img/02B_ALAMEDA.jpg" rel="lightbox" title="Pavimentação da Alameda"><img
                                         src="assets/img/02B_ALAMEDA.jpg" height="120" width="165"
                                         alt="Pavimentação da Alameda" title="Pavimentação da Alameda" /></a>
                             </li>
-                            <li>
+                            <li class="single">
                                 <a href="assets/img/03_FACHADA.jpg" rel="lightbox" title="fachada"><img
                                         src="assets/img/03_FACHADA.jpg" width="165" height="120" alt="Fachada"
                                         title="Fachada" /></a>
                             </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="FotosContent_Info">
-                    <ul>
-                        <li>
-                            <span></span>
-                            Piscina adulto e infantil
-                        </li>
-                        <li>
-                            <span></span>
-                            Salão de festas
-                        </li>
-                        <li>
-                            <span></span>
-                            Churrasqueira
-                        </li>
-                        <li>
-                            <span></span>
-                            Campo de futebol
-                        </li>
-                        <li>
-                            <span></span>
-                            Quadra Poliesportiva
-                        </li>
-                        <li>
-                            <span></span>
-                            Parquinho Infantil<p class="Obs">(Entregue mobiliado)</p>
-                        </li>
-                        <li>
-                            <span></span>
-                            Pergolados
-                        </li>
-                    </ul>
+                        </ul> 
+
+                       
                 </div>
             </div>
-            <div class="BtnFotos"><a href="#empreendimento"><button class="BtnSubmit">Quero mais
-                        informações</button></a></div>
-        </section>
-        <section class="Diferenciais" id="diferenciais">
-            <div class="DiferenciaisContainer">
-                <div class="DiferenciaisTitle">
-                    <h1>Diferenciais</h1>
+            <div class="FotosContent_Info">
+                <ul>
+                    <li>
+                        <span></span>
+                        Piscina adulto e infantil
+                    </li>
+                    <li>
+                        <span></span>
+                        Salão de festas
+                    </li>
+                    <li>
+                        <span></span>
+                        Churrasqueira
+                    </li>
+                    <li>
+                        <span></span>
+                        Campo de futebol
+                    </li>
+                    <li>
+                        <span></span>
+                        Quadra Poliesportiva
+                    </li>
+                    <li>
+                        <span></span>
+                        Parquinho Infantil<p class="Obs">(Entregue mobiliado)</p>
+                    </li>
+                    <li>
+                        <span></span>
+                        Pergolados
+                    </li>
+                </ul>
+            </div>
+    </div>
+    <div class="BtnFotos"><a href="#empreendimento"><button class="BtnSubmit">Quero mais
+                informações</button></a></div>
+    </section>
+    <section class="Diferenciais" id="diferenciais">
+        <div class="DiferenciaisContainer">
+            <div class="DiferenciaisTitle">
+                <h1>Diferenciais</h1>
+            </div>
+            <div class="DiferenciaisSubTitle">
+                <h2>Sua família terá mais motivos para sorrir.</h2>
+            </div>
+        </div>
+        <div class="DiferenciaisContent">
+            <div class="DiferenciaisContent_Galeria">
+                <img src="assets/img/casal.png" alt="Casal conquistando sua casa própria" title="Casal em casa" />
+            </div>
+            <div class="DiferenciaisContent_Info">
+                <ul>
+                    <li>
+                        <span>-</span>
+                        Piso cerâmico em todo Apartamento
+                    </li>
+                    <li>
+                        <span>-</span>
+                        Pisos e azulejos até o teto na cozinha e banheiro
+                    </li>
+                    <li>
+                        <span>-</span>
+                        Previsão para Ar-Condicionado de janela nos quartos
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="Filmes" id="filmes">
+        <div class="FilmesContainer">
+            <div class="FilmesTitle">
+                <h1>Filmes</h1>
+            </div>
+            <div class="FilmesSubTitle">
+                <h2>Essa é a sua maior conquista.</h2>
+            </div>
+        </div>
+        <div class="FilmesAll">
+            <div class="VideoGrande">
+                <img src="assets/img/video.png" />
+            </div>
+            <div class="VideosPequenos">
+                <img src="assets/img/video1.png" />
+                <img src="assets/img/video2.png" />
+                <img src="assets/img/video2.png" />
+            </div>
+        </div>
+    </section>
+    <section class="Localizacao" id="localizacao">
+        <div class="LocalizacaoContainer">
+            <div class="LocalizacaoTitle">
+                <h1>Localização</h1>
+            </div>
+            <div class="LocalizacaoSubTitle">
+                <h2>Viva em um lugar onde a diversão escolheu morar.</h2>
+            </div>
+        </div>
+        <div class="LocalizacaoAll">
+            <div class="Mapa">
+                <img src="assets/img/mapa.png" alt="Mapa" title="Localização" />
+            </div>
+            <div class="MapaInfo">
+                <div class="EndInfo">
+                    <span>Rua 20, Lote 8, Parque Primavera - Itaguaí </span>
                 </div>
-                <div class="DiferenciaisSubTitle">
-                    <h2>Sua família terá mais motivos para sorrir.</h2>
+                <div class="EndInfoObs">
+                    <span>2 km da BR</span>
+                    <div class="SeparadorVertical"></div>
+                    <span>5 Km do Centro </span>
                 </div>
             </div>
-            <div class="DiferenciaisContent">
-                <div class="DiferenciaisContent_Galeria">
-                    <img src="assets/img/casal.png" alt="Casal conquistando sua casa própria" title="Casal em casa" />
-                </div>
-                <div class="DiferenciaisContent_Info">
-                    <ul>
-                        <li>
-                            <span>-</span>
-                            Piso cerâmico em todo Apartamento
-                        </li>
-                        <li>
-                            <span>-</span>
-                            Pisos e azulejos até o teto na cozinha e banheiro
-                        </li>
-                        <li>
-                            <span>-</span>
-                            Previsão para Ar-Condicionado de janela nos quartos
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <section class="Filmes" id="filmes">
-            <div class="FilmesContainer">
-                <div class="FilmesTitle">
-                    <h1>Filmes</h1>
-                </div>
-                <div class="FilmesSubTitle">
-                    <h2>Essa é a sua maior conquista.</h2>
-                </div>
-            </div>
-            <div class="FilmesAll">
-                <div class="VideoGrande">
-                    <img src="assets/img/video.png" />
-                </div>
-                <div class="VideosPequenos">
-                    <img src="assets/img/video1.png" />
-                    <img src="assets/img/video2.png" />
-                    <img src="assets/img/video2.png" />
-                </div>
-            </div>
-        </section>
-        <section class="Localizacao" id="localizacao">
-            <div class="LocalizacaoContainer">
-                <div class="LocalizacaoTitle">
-                    <h1>Localização</h1>
-                </div>
-                <div class="LocalizacaoSubTitle">
-                    <h2>Viva em um lugar onde a diversão escolheu morar.</h2>
-                </div>
-            </div>
-            <div class="LocalizacaoAll">
-                <div class="Mapa">
-                    <img src="assets/img/mapa.png" alt="Mapa" title="Localização" />
-                </div>
-                <div class="MapaInfo">
-                    <div class="EndInfo">
-                        <span>Rua 20, Lote 8, Parque Primavera - Itaguaí </span>
-                    </div>
-                    <div class="EndInfoObs">
-                        <span>2 km da BR</span>
-                        <div class="SeparadorVertical"></div>
-                        <span>5 Km do Centro </span>
-                    </div>
-                </div>
-                <div class="Patrocinadores">
-                    <div class="Container-Logos">
-                        <div class="LogosPatrocinadores">
-                            <div class="Realizacao">
-                                <span>Realização</span>
-                                <div class="LogosImg">
-                                    <img src="assets/img/msinvestimentos.png" alt="Ms Investimentos" />
-                                </div>
+            <div class="Patrocinadores">
+                <div class="Container-Logos">
+                    <div class="LogosPatrocinadores">
+                        <div class="Realizacao">
+                            <span>Realização</span>
+                            <div class="LogosImg">
+                                <img src="assets/img/msinvestimentos.png" alt="Ms Investimentos" />
                             </div>
-                            <div class="Construcao">
-                                <span>Construção:</span>
-                                <div class="LogoFlex">
-                                    <div class="LogosImg">
-                                        <img src="assets/img/tecverde.png" alt="TecVerde" />
-                                    </div>
-                                    <div class="LogosImg">
-                                        <img src="assets/img/lumo-logo.png" alt="Lumo Arquitetura" />
-                                    </div>
+                        </div>
+                        <div class="Construcao">
+                            <span>Construção:</span>
+                            <div class="LogoFlex">
+                                <div class="LogosImg">
+                                    <img src="assets/img/tecverde.png" alt="TecVerde" />
+                                </div>
+                                <div class="LogosImg">
+                                    <img src="assets/img/lumo-logo.png" alt="Lumo Arquitetura" />
                                 </div>
                             </div>
                         </div>
-                        <div class="BtnFotos"><a href="#empreendimento"><button class="BtnSubmit">Quero mais
-                                    informações</button></a></div>
                     </div>
-                </div>
-
-                <div class="More">
-                    <p>
-                        Os layouts, equipamentos, mobiliários, cores, paginações de acabamento e vegetação apresentados
-                        nas
-                        imagens, são meramente ilustrativos e referenciais. A construtora/incorporadora se reserva o
-                        direito
-                        de atualizá-los e/ou modificá-los. A vegetação será entregue conforme o especificado no projeto
-                        do
-                        empreendimento, sendo suas imagens meramente representações da futura fase adulta das espécies.
-                        Consultar o Memorial Descritivo do empreendimento. Projeto legal aprovado sob o número
-                        12.928/18.
-                        Memorial de Incorporação prenotado sob o nº 52.371 no Cartório do 2º Oficio de Justiça de
-                        Itaguaí –
-                        RJ. Para mais informações em relação ao número de vagas de garagem, consultar nossos corretores
-                        e o
-                        projeto legal aprovado sob o número 12.928/18. Preços sujeitos a alteração sem aviso prévio. Os
-                        apartamentos informados estão sujeitos a disponibilidade. A construtora/incorporadora se reserva
-                        o
-                        direito de alterar os valores sem prévia comunicação. O valor máximo de subsídio e o valor das
-                        prestações podem variar de acordo com a renda e o sinal, e também de acordo com o município e a
-                        legislação vigente. Consulte nossos corretores para mais informações a respeito da utilização do
-                        FGTS.
-                    </p>
+                    <div class="BtnFotos"><a href="#empreendimento"><button class="BtnSubmit">Quero mais
+                                informações</button></a></div>
                 </div>
             </div>
-    </div>
+
+            <div class="More">
+                <p>
+                    Os layouts, equipamentos, mobiliários, cores, paginações de acabamento e vegetação apresentados
+                    nas
+                    imagens, são meramente ilustrativos e referenciais. A construtora/incorporadora se reserva o
+                    direito
+                    de atualizá-los e/ou modificá-los. A vegetação será entregue conforme o especificado no projeto
+                    do
+                    empreendimento, sendo suas imagens meramente representações da futura fase adulta das espécies.
+                    Consultar o Memorial Descritivo do empreendimento. Projeto legal aprovado sob o número
+                    12.928/18.
+                    Memorial de Incorporação prenotado sob o nº 52.371 no Cartório do 2º Oficio de Justiça de
+                    Itaguaí –
+                    RJ. Para mais informações em relação ao número de vagas de garagem, consultar nossos corretores
+                    e o
+                    projeto legal aprovado sob o número 12.928/18. Preços sujeitos a alteração sem aviso prévio. Os
+                    apartamentos informados estão sujeitos a disponibilidade. A construtora/incorporadora se reserva
+                    o
+                    direito de alterar os valores sem prévia comunicação. O valor máximo de subsídio e o valor das
+                    prestações podem variar de acordo com a renda e o sinal, e também de acordo com o município e a
+                    legislação vigente. Consulte nossos corretores para mais informações a respeito da utilização do
+                    FGTS.
+                </p>
+            </div>
+        </div>
+        </div>
     </section>
     <section class="Rodape">
         <div class="ContainerFooter">
@@ -437,5 +451,5 @@
         </div>
     </section>
 </body>
-
+<script src="dist/js/main.js"></script>
 </html>
