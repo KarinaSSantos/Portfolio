@@ -1,0 +1,81 @@
+.Filmes{
+    background: #fff;
+    margin-top: 150px;
+    .FilmesContainer{
+        display: flex;
+        align-items: flex-end;
+        @media only screen and (max-width: 740px) {
+            flex-direction: column;
+         }
+        .FilmesTitle{
+            text-transform: uppercase;
+            font-weight: bolder;
+            color: #fff;
+            background: $degradeVerde;
+            padding: 12px 20px;
+            clip-path: polygon(0px 0px, 323px 1px, 371px 101.34%, 0px 100%);
+            width: 332px;
+            z-index: 3;
+            text-align: center;
+        }
+        .FilmesSubTitle{
+            background: $degradeAzul;
+            color: #fff;
+            padding: 10px 0;
+            width: 332px;
+            height: 50px;
+            width: calc(100% - 332px);
+            position: absolute;
+            text-align: right;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-left: 332px;
+            @media only screen and (max-width: 740px) {
+                display:flex;
+                position: relative;
+                width: 100%;
+                font-size: 12px;
+                text-align: left;
+                padding-top: 10px;
+                padding-left: 5px; 
+            }
+            h2{
+                margin: 0;
+                padding: 0;
+                font-weight: normal;
+            }
+        }
+    }
+    .FilmesAll{
+        padding: 60px;
+        justify-content: center;
+        align-items: center;
+        .VideoGrande{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            img{
+                width: 100%;
+                margin-bottom: 60px;
+            }
+        }
+        .VideosPequenos{
+            display: flex;
+            justify-content: space-between;
+            @media only screen and (max-width: 740px) {
+                display:flex;
+               flex-direction: column;
+            }
+        
+            img{
+                width: 30%;
+                @media only screen and (max-width: 740px) {
+                   width: 100%; 
+                   margin-bottom: 60px;
+                }
+            
+            }
+        }
+    }
+}

@@ -1,0 +1,155 @@
+.Localizacao {
+  background: #fff;
+  .LocalizacaoContainer {
+    padding-top: 80px;
+    display: flex;
+    align-items: flex-end;
+    @media only screen and (max-width: 740px) {
+      flex-direction: column;
+      padding: 0px;
+   }
+    .LocalizacaoTitle {
+      text-transform: uppercase;
+      font-weight: bolder;
+      color: #fff;
+      background: $degradeVerde;
+      padding: 12px 20px;
+      clip-path: polygon(0px 0px, 323px 1px, 371px 101.34%, 0px 100%);
+      width: 332px;
+      z-index: 3;
+      text-align: center;
+    }
+    .LocalizacaoSubTitle {
+      background: $degradeAzul;
+      color: #fff;
+      padding: 10px 0;
+      width: 332px;
+      height: 50px;
+      width: calc(100% - 332px);
+      position: absolute;
+      text-align: right;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-left: 332px;
+      @media only screen and (max-width: 740px) {
+        display:flex;
+        position: relative;
+        width: 100%;
+        font-size: 12px;
+        text-align: left;
+        padding-top: 10px;
+        padding-left: 5px; 
+    }
+
+
+      h2 {
+        margin: 0;
+        padding: 0;
+        font-weight: normal;
+      }
+    }
+  }
+  .LocalizacaoAll {
+    padding: 60px;
+    .Mapa {
+      display: flex;
+      justify-content: center;
+      img {
+        width: 100%;
+      }
+    }
+    .MapaInfo {
+      display: flex;
+      background: linear-gradient(to top, #00817d, #009e9a);
+      color: #fff;
+      font-size: 20px;  
+      text-transform: uppercase;    
+      text-align: center;
+      .EndInfo{
+        background: $degradeMarinho;
+        width: 50%;
+        font-weight: bold;
+        padding: 25px;
+        clip-path: polygon(-3px -3px, 665px -20px, 586px 163.36%, 0px 129.65%);
+      }
+      .EndInfoObs {
+        display: flex;
+        padding: 25px;
+        text-align: center;
+        width: 40%;
+        justify-content: center;
+        align-items: center;
+        .SeparadorVertical{
+          width: 3px;
+          height: 18px;
+          background: $degradeAmarelo;
+          margin: 0 15px;
+    }
+    }
+  }
+    .Patrocinadores {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-direction: column;
+      margin: 50px 0;
+      .LogosPatrocinadores {
+
+        display: flex;
+        width: 50% !important;
+        justify-content: space-between;
+    
+    }
+      .BtnSubmit {
+        background: linear-gradient(to bottom, #fccc50, #fff);
+        padding: 20px 60px;
+        clip-path: polygon(-3px -3px, 300px -3px, 333px 131.63%, 30px 131.26%);
+        border: none;
+        font-size: 16px;
+        font-weight: 400;
+        text-transform: uppercase;
+      }
+    }
+    .More {
+      p {
+        font-size: 10px;
+        text-align: justify;
+        color: $AzulTexto;
+      }
+    }
+    .Container-Logos {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+  }
+    .Realizacao {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      span{
+        margin-bottom: 20px;
+      }
+  }
+  .Construcao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    span{
+      margin-bottom: 20px;
+    }
+    .LogoFlex {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .LogosImg{
+        margin: 0px 20px;
+      }
+  }
+}
+  }
+}

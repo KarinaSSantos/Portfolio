@@ -1,0 +1,148 @@
+.Diferenciais{
+    height: 110vh;
+    background: #fff;
+    margin-top: 100px;
+    @media only screen and (max-width: 740px) {
+        height: auto;
+        margin-top: 0;
+     }
+    .DiferenciaisContainer{
+        padding-top: 80px;
+        display: flex;
+        align-items: flex-end;
+        @media only screen and (max-width: 740px) {
+            flex-direction: column;
+         }
+        .DiferenciaisTitle{
+            text-transform: uppercase;
+            font-weight: bolder;
+            color: #fff;
+            background: $degradeVerde;
+            padding: 12px 20px;
+            clip-path: polygon(0px 0px, 323px 1px, 371px 101.34%, 0px 100%);
+            width: 332px;
+            z-index: 3;
+            text-align: center;
+        }
+        .DiferenciaisSubTitle{
+            background: $degradeAzul;
+            color: #fff;
+            padding: 10px 0;
+            width: 332px;
+            height: 50px;
+            width: calc(100% - 332px);
+            position: absolute;
+            text-align: right;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-left: 332px;
+            @media only screen and (max-width: 740px) {
+                display:flex;
+                position: relative;
+                width: 100%;
+                font-size: 12px;
+                text-align: left;
+                padding-top: 10px;
+                padding-left: 5px; 
+            }
+            h2{
+                margin: 0;
+                padding: 0;
+                font-weight: normal;
+            }
+        }
+    }
+    .DiferenciaisContent{
+        margin-top: 104px;
+        display: flex;
+        justify-content: space-between;
+        @media only screen and (max-width: 740px) {
+            display:flex;
+            flex-direction: column;
+            margin-top: 50px;
+        }
+        .DiferenciaisContent_Galeria {
+            @media only screen and (max-width: 740px) {
+                width: 100%;
+            }
+            img{
+                @media only screen and (max-width: 740px) {
+                   width: 100%;
+                }
+            }
+        }
+        .DiferenciaisContent_Info{
+            clip-path: polygon(0px -4px, 730px -3px, 730px 100.77%, 166px 100.00%);
+            height: 320px;
+            padding: 24px;
+            display: flex;
+            justify-content: center;
+            background-image: $degradeMarinhoL;
+            z-index: 8;
+            width: 686px;
+            position: absolute;
+            right: 0;
+            margin-top: 60px;
+            @media only screen and (max-width: 740px) {
+                display:flex;
+                position: relative;
+                clip-path: none;
+                width: 100%;
+                height: auto;
+            }
+            ul{
+                padding: 0;
+                margin: 0;
+                list-style-type: none;
+                line-height: 1.9em;
+                align-self: center;
+                :nth-child(1n){
+                    padding-left: 55px;
+                    width: 47%;
+                    @media only screen and (max-width: 740px) {
+                        padding: 0;
+                        width: 100%;
+                    }
+                }
+                :nth-child(2n){
+                    padding-left: 110px;
+                    width: 60%;
+                    @media only screen and (max-width: 740px) {
+                        padding: 0;
+                        width: 100%;
+                    }
+                }
+                :nth-child(3n){
+                    width: 68%;
+                    padding-left: 146px;
+                    @media only screen and (max-width: 740px) {
+                        padding: 0;
+                        width: 100%;
+                    }
+                }
+                li{
+                    display: flex;
+                    flex-direction: row;
+                    padding-bottom: 20px;
+                    text-transform: uppercase;
+                    font-size: 18px;
+                    color: #fff;
+                    @media only screen and (max-width: 740px) {
+                        font-size: 12px;
+                    }
+                    .Obs{
+                        font-size: 10px;
+                        text-transform: capitalize;
+                        display: block;
+                    }
+                    span{
+                        width: 30px !important;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
+

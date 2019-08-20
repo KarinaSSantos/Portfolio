@@ -1,0 +1,208 @@
+.Fotos {
+  height: 110vh;
+  background: transparent;
+  margin-top: -25px;
+  text-align: center;
+  @media only screen and (max-width: 740px) {
+    height: auto;
+ }
+  
+  .FotosContainer {
+    display: flex;
+    align-items: flex-end;
+    @media only screen and (max-width: 740px) {
+        flex-direction: column;
+     }
+    .FotosTitle {
+      text-transform: uppercase;
+      font-weight: bolder;
+      color: #fff;
+      background: $degradeVerde;
+      padding: 12px 20px;
+      clip-path: polygon(0px 0px, 323px 1px, 371px 101.34%, 0px 100%);
+      width: 332px;
+      z-index: 3;
+      text-align: center;
+    }
+    .FotosSubTitle {
+      background: $degradeAzul;
+      color: #fff;
+      padding: 10px 0;
+      width: 332px;
+      height: 50px;
+      width: calc(100% - 332px);
+      position: absolute;
+      text-align: right;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-left: 332px;
+      @media only screen and (max-width: 740px) {
+        display:flex;
+        position: relative;
+        width: 100%;
+        font-size: 12px;
+        text-align: left;
+        padding-top: 10px;
+        padding-left: 5px; 
+    }
+
+      h2 {
+        margin: 0;
+        padding: 0;
+        font-weight: normal;
+      }
+    }
+  }
+  .FotosContent {
+    margin-top: 104px;
+    display: flex;
+    justify-content: space-between;
+    @media only screen and (max-width: 740px) {
+      flex-direction: column;
+    }
+    .FotosContent_Galeria {
+      display: flex;
+      .FotosContainerGallery {
+        display: flex;
+        flex-direction: row;
+        @media only screen and (max-width: 740px) {
+          flex-direction: column;
+        }
+        ul {
+          list-style: none;
+          display: flex;
+          justify-content: center;
+          width: 600px;
+          flex-wrap: wrap;
+          padding: 0;
+          margin: 0;
+          @media only screen and (max-width: 740px) {
+            width: 100%;
+            display: flex;
+          }
+          li {
+            margin: 10px;
+            img{
+                @media only screen and (max-width: 740px) {
+                    width: 150px;
+                    height: 100px;
+                }
+            }
+          }
+        }
+      }
+    }
+    .FotosContent_Info {
+      clip-path: polygon(66px -22px, 864px 1px, 801px 104.51%, 171px 105.21%);
+      width: 50%;
+      padding: 47px;
+      display: flex;
+      justify-content: center;
+      background-image: $degradeVerde;
+      align-items: center;
+      @media only screen and (max-width: 740px) {
+        width: 100%;
+        clip-path: none;
+     }
+     
+      ul {
+        padding: 0;
+        margin: 0;
+        margin-left: 80px;
+        list-style-type: none;
+        @media only screen and (max-width: 740px) {
+            padding: 0;
+            margin: 0;
+
+         }
+      
+        :nth-child(1n) {
+          padding-left: 0px;
+          @media only screen and (max-width: 740px) {
+            padding: 0px;
+         }
+        }
+        :nth-child(2n) {
+          padding-left: 8px;
+          @media only screen and (max-width: 740px) {
+            padding: 0px;
+         }
+        }
+        :nth-child(3n) {
+          padding-left: 16px;
+          @media only screen and (max-width: 740px) {
+            padding: 0px;
+         }
+        }
+        :nth-child(4n) {
+          padding-left: 24px;
+          @media only screen and (max-width: 740px) {
+            padding: 0px;
+         }
+        }
+        :nth-child(5n) {
+          padding-left: 32px;
+          @media only screen and (max-width: 740px) {
+            padding: 0px;
+         }
+        }
+        :nth-child(6n) {
+          padding-left: 40px;
+          padding-left: 40px;
+          width: 90%;
+          flex-wrap: wrap;
+          @media only screen and (max-width: 740px) {
+            padding: 0px;
+         }
+        }
+        :nth-child(7n) {
+          padding-left: 48px;
+          @media only screen and (max-width: 740px) {
+            padding: 0px;
+         }
+        }
+        li {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          padding-bottom: 20px;
+          text-transform: uppercase;
+          font-size: 20px;
+          color: #fff;
+          @media only screen and (max-width: 740px) {
+            font-size: 14px;
+         }
+          .Obs {
+            font-size: 14px;
+            text-transform: uppercase;
+            display: block;
+            margin: 5px;
+          }
+          span {
+            margin-right: 8px;
+            width: 8px;
+            height: 8px;
+            background-color: #fff;
+            border-radius: 100px;
+            display: block;
+          }
+        }
+      }
+    }
+  }
+  .BtnSubmit {
+    background: linear-gradient(to bottom, #fccc50, #fff);
+    padding: 20px 60px;
+    clip-path: polygon(-3px -3px, 300px -3px, 333px 131.63%, 30px 131.26%);
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 100px 0;
+    @media only screen and (max-width: 740px) {
+        margin: 50px 0;
+        margin-bottom: 0;
+     }
+  }
+}
